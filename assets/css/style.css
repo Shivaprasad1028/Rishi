@@ -128,9 +128,11 @@ section#top {
    
 }  
 section#contact-section {
-  background: #ffc107;
+  background: #787878;
 	font-weight: bold;
-  margin-top: -5px;
+margin-top: 0;
+color: white;
+
 }
 button.close {
     position: relative;
@@ -447,28 +449,43 @@ services
 section#services {
     display: flex;
     background-color: #c8e4ff;
-   
+ padding-bottom: 4%;
+ 
 }
+
 .hr{
   width: 30%;
 border: 1px solid #333;
 }
 
 .services .item {
-  border-radius: 15px;
+  border-radius: 20px;
   text-align: center;
-  padding: 20px 30px;
-  margin: 15px;
+padding-right: 60px;
+
   transition: all .3s;
   width: 33%;
-    margin: 0 auto;
+ 
+  margin: 10px auto;
     display: inline-block;
   cursor: pointer;
+
+
+  
+}
+.sub{
+  background-image: linear-gradient(to right, #1993c65c, rgb(25 147 198 / 55%)), url(https://th.bing.com/th/id/R.eef843e4e0f3fd858375d3ae3001b587?rik=0jc%2blWjUeq69dg&riu=http%3a%2f%2fwww.pixelstalk.net%2fwp-content%2fuploads%2f2016%2f06%2fLight-blue-abstract-wallpaper.jpg&ehk=GvbynSMqWxoQqT2yTEwm9mIa%2faAMGPhSh4Y%2fxGxrZbY%3d&risl=&pid=ImgRaw&r=0);
+  -webkit-background-size: cover;
+  height: 330px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+ border-radius: 20px;
+
 }
 
 .services .item:hover {
   transform: translateY(-10px);
     transition: 0.3s all ease-out;
+
   
 }
 
@@ -476,10 +493,18 @@ border: 1px solid #333;
   max-width: 100%;
   margin: 0 auto;
   min-height: 80px;
+  
+}
+.service-item .icon img{
+  margin-top: 20px;
+  border-radius: 20px;
+ 
+
+  
 }
 .modal-body .item .icon {
     max-width: 150px;
-    margin: 0 auto;
+
     min-height: 80px;
     margin-bottom: 10px;
 }
@@ -487,15 +512,17 @@ border: 1px solid #333;
 .services .item h4 {
   padding-top: 15px;
   padding-bottom: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
     font-size: 20px;
     color: #333;
     background: #ffc107;
   font-family: 'Inter', sans-serif;
     font-weight: 600;
 	display: grid;
-    margin: 0 auto;
+    margin: 30px auto;
     text-align: center;
+    border-radius: 20px;
 }
 .services .item h4:hover{
 color: white;
@@ -506,13 +533,6 @@ color: white;
   margin-top: 30px;
 }
 
-.services .owl-dots .owl-dot {
-  width: 10px;
-  height: 10px;
-  background-color: #ddd;
-  border-radius: 50%;
-  margin: 0px 4px;
-}
 
 .services .owl-dots .active {
   background-color: #dc8cdb;
@@ -529,33 +549,8 @@ section.contact-us ul.social-icons {
   margin-top: 30px;
 }
 
-section.contact-us ul.social-icons li a {
-  width: 44px;
-  height: 44px;
-  display: inline-block;
-  text-align: center;
-  line-height: 44px;
-  background-color: #fff;
-  color: #000;
-  border-radius: 50%;
-  transition: all .5s;
-}
 
-section.contact-us ul.social-icons li a:hover {
-  background-color: #000;
-  color: #fff;
-}
 
-p.copyright {
-  text-align: center;
-  color: #fff;
-  margin: 40px 0px;
-}
-
-p.copyright a {
-  font-weight: 800;
-  color: #fff;
-}
 
 /*
 ---------------------------------------------
@@ -569,10 +564,7 @@ section.page-heading {
 
 }
 
-section.page-heading .header-text {
-  border-bottom: 3px solid #eee;
-  padding-bottom: 80px;
-}
+
 
 section.page-heading .header-text h4 {
   font-size: 17px;
@@ -610,19 +602,7 @@ section.get-info .info-item {
   position: relative;
 }
 
-section.get-info .info-item .icon {
-  position: absolute;
-  left: 30px;
-  top: -30px;
-  width: 80px;
-  height: 80px;
-  display: inline-block;
-  border-radius: 15px;
-  text-align: center;
-  line-height: 80px;
-  background-color: #fff;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.06);
-}
+
 
 section.get-info .info-item .icon img {
   max-width: 60%;
@@ -675,19 +655,7 @@ section.our-team .naccs .menu {
   display: inline-block;
 }
 
-section.our-team .naccs .menu div {
-  margin: 0px 15px;
-  text-align: center;
-  display: inline-block;
-  width: 15%;
-  text-align: center;
-  font-size: 20px;
-  color: #111;
-  background-color: #fff;
-  cursor: pointer;
-  vertical-align: middle;
-  font-weight: 900;
-}
+
 
 section.our-team .naccs .menu div img {
   border-radius: 50%;
