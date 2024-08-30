@@ -73,20 +73,24 @@ figure, header, nav, section, article, aside, footer, figcaption {
     display: table-cell;
   width: 400px;
 }
+.modal-title{
+  font-weight: 600;
+}
 .modal-header {
     display: block;
     background: #ffc107;
+
     text-align: center;
 }
 .modal-body .item h4 {
     font-size: 16px;
-  color: #000;
-  font-weight: 500;
+  color: #333;
+  font-weight: 600;
     text-align: center;
 }
 .modal-body .item h4 {
    font-size: 16px;
-    color: #000;
+color: #333;
     text-align: center;
     background: #ffc107;
     padding: 10px;
@@ -132,6 +136,7 @@ button.close {
     position: relative;
     left: 0px;
     opacity: 1;
+    font-size: 20px;
 }
 .modal.fade .modal-dialog {
     transition: transform .3s ease-out;
@@ -190,10 +195,10 @@ h5 {
       margin-top: 15px !important;
    font-size: 18px;
     line-height: 26px;
-    
+    text-align: left;
     font-weight: 500;
     color: #333;
-	width: 80%;
+width: 70%;
 }
 
 ul {
@@ -256,7 +261,7 @@ body {
 	
 }
 .main-button-gradient a {
-  box-shadow: 11px 6px 19px 1px rgb(0 0 0 / 50%); 
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   font-size: 13px;
   color: #333;
   background: #ffc107;
@@ -266,13 +271,19 @@ body {
   font-weight: 800;
   text-transform: uppercase;
   transition: all .3s;
+  letter-spacing: 1px;
 }
 .header-text h4 {
     font-size: 32px;
     color: #333;
   font-weight: 700;
-}
 
+}
+.header-text h5 {
+ 
+text-align: left;
+
+}
 .white-button a {
   font-size: 13px;
   color: #dc8cdb;
@@ -332,8 +343,8 @@ section {
     font-weight: 900;
     text-transform: capitalize;
     color: #333;
-    border-bottom: 1px solid;
-    width: 20%;
+   
+ font-family: "Inter";
     margin: 10px auto;
 }
 
@@ -421,7 +432,12 @@ section.main-banner {
     margin-right: 19px;
     width: 100%;
 }
-
+.header-text{
+  text-align: left;
+}
+.right-image{
+  cursor: pointer;
+}
 
 /*
 ---------------------------------------------
@@ -433,6 +449,10 @@ section#services {
     background-color: #c8e4ff;
    
 }
+.hr{
+  width: 30%;
+border: 1px solid #333;
+}
 
 .services .item {
   border-radius: 15px;
@@ -443,11 +463,11 @@ section#services {
   width: 33%;
     margin: 0 auto;
     display: inline-block;
-  
+  cursor: pointer;
 }
 
 .services .item:hover {
-  transform: scale(1.1);
+  transform: translateY(-10px);
     transition: 0.3s all ease-out;
   
 }
@@ -471,7 +491,7 @@ section#services {
     font-size: 20px;
     color: #333;
     background: #ffc107;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Inter', sans-serif;
     font-weight: 600;
 	display: grid;
     margin: 0 auto;
@@ -1038,6 +1058,7 @@ body {
   .main-banner .header-text h2 {
     font-size: 62px;
   }
+
   .header-area {
     background: rgb(219,138,222) !important;
     background: linear-gradient(-145deg, rgba(219,138,222,1) 0%, rgba(246,191,159,1) 100%) !important;
@@ -1098,7 +1119,9 @@ body {
   .main-banner .header-text {
     text-align: center;
     margin-bottom: 60px;
-  }
+ margin-right: 5%;
+ margin-left: 5%;
+  } 
   .main-banner .right-image {
     margin-left: 0px;
   }
